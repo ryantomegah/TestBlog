@@ -1,0 +1,69 @@
+---
+title: "Next.js Image Optimisation"
+publishedAt: "2025-06-25"
+summary: "How to optimise images in your Next.js projects for better performance."
+---
+
+Optimising images is crucial for web performance, and Next.js makes it easy with its built-in `next/image` component. In this article, you'll learn how to use it and best practices for image optimisation in your Next.js apps.
+
+![Laurier logo](https://ryan-naum.vercel.app/laurier.png)
+
+## Why Image Optimisation Matters
+
+Large, unoptimised images can slow down your website, increase bounce rates, and hurt SEO. By optimising images, you ensure faster load times and a better user experience.
+
+## Using the `next/image` Component
+
+Next.js provides the `Image` component, which automatically optimises images on-demand:
+
+```jsx
+import Image from "next/image";
+
+export default function Example() {
+  return <Image src="/public/atomic.png" alt="Atomic logo" width={400} height={300} priority />;
+}
+```
+
+- **Automatic resizing**: Serve images at the right size for every device.
+- **Lazy loading**: Images load only when they enter the viewport.
+- **Modern formats**: Next.js can serve WebP or AVIF when supported.
+
+## Best Practices
+
+| Practice               | Description                                     |
+| ---------------------- | ----------------------------------------------- |
+| Use `next/image`       | Always use the built-in component for images.   |
+| Specify width & height | Prevents layout shift and improves performance. |
+| Optimise source files  | Use tools like TinyPNG before uploading.        |
+| Use CDN                | Leverage Vercel or a custom CDN for delivery.   |
+
+## Example Output
+
+```jsx
+<Image src="/public/atomic.png" alt="Atomic logo" width={400} height={300} />
+```
+
+By following these tips and using Next.js features, your site will be faster and more user-friendly.
+
+De nos jours, le monde du développement surtout Web évolue à une vitesse fulgurante. Une tendance qui ne cesse de gagner en popularité est le développement Web sans code. Certains y voient la prochaine révolution dans le domaine, tandis que d'autres restent sceptiques.
+
+💻 **Liberté créative ou limites fonctionnelles ?**
+
+L'idée de créer des applications sans écrire une seule ligne de code peut sembler alléchante. Cela ouvre la porte à une plus grande créativité, permettant aux esprits non techniques de donner vie à leurs idées numériques. Cependant, quelles sont les limites de cette approche ? Peut-on réellement obtenir la même fonctionnalité et la même puissance qu'avec un développement traditionnel ?
+
+🌍 **Accessibilité et démocratisation de la technologie**
+
+Le développement sans code offre-t-il une opportunité unique d'élargir l'accès à la création numérique ? En rendant le processus plus accessible, cela pourrait-il contribuer à la démocratisation de la technologie et à l'inclusion de personnes aux compétences variées ?
+
+🔗 **Pour aller plus loin :**
+
+Pour approfondir la réflexion, je vous invite à lire ces articles intéressants sur le sujet :
+
+1. [**Low-code / No-code : Pourquoi est-ce le futur et non une simple tendance ?**](https://guide.airmakers.io/low-code-no-code-pourquoi-est-ce-le-futur-et-non-une-simple-tendance/)
+2. [**Le no-code : futur de la filière programmation ?**](https://alm.developpez.com/actu/331802/Le-no-code-futur-de-la-filiere-programmation-C-est-l-avis-du-fondateur-de-Bubble-qui-explique-pourquoi-les-ingenieurs-devraient-soutenir-les-outils-no-code-critiques-sur-l-aspect-maintenance/)
+
+🤔 **Et vous, quel est votre point de vue ?**
+
+Partagez vos opinions dans les commentaires ! Croyez-vous que le développement Web sans code est le futur ? Ou pensez-vous que certaines limites persistent ? 💭
+
+#DeveloppementWeb #NoCode #TechTrends #Debat
