@@ -177,6 +177,7 @@ export const DATA = {
     {
       company: "IB Bank Togo",
       href: "",
+      badges: [],
       location: "Lomé, Togo",
       title: "International Operations Specialist",
       logoUrl: "/ib.png",
@@ -192,6 +193,7 @@ export const DATA = {
     {
       company: "Banque Atlantique",
       href: "",
+      badges: [],
       location: "Lomé, Togo",
       title: "Financial Research Intern",
       logoUrl: "/banque-atlantique.png",
@@ -363,7 +365,10 @@ GPA: 3.7/4.0
 - Set up and manage client CRMs (HubSpot, Notion) and simple Zapier automations to streamline reporting and follow‑ups.
 - Iterative Agile sprints: backlog grooming, daily stand-ups, demo retros.
       `,
-      image: "/naum-real-estate.png"
+      image: "/naum-real-estate.png",
+      technologies: [],
+      video: "",
+      links: [],
     },
   ],
   hackathons: [
